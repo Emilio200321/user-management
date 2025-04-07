@@ -9,7 +9,7 @@ function App() {
       <main className="p-4">
         <UserGrid />
       </main>
-    </div>
+    </div> 
   );
 }
 
