@@ -8,7 +8,7 @@ interface Props {
 
 const ProtectedRoute = ({ children }: Props) => {
   const Token = useAuthStore((state) => state.Token);
-console.log(Token)
+// console.log(Token)
   if (!Token) {
     return <Navigate to="/login" replace />;
   }

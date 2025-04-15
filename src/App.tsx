@@ -1,6 +1,5 @@
 
-import Navbar from "./components/Navbar";
-import UserGrid  from "./components/UserGrid";
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from "./login/Login";
 import ProtectedRoute from "./routes/ProtectedRoute";
@@ -17,6 +16,7 @@ function App() {
     // </div> 
     <Router>
     <Routes>
+      <Route path="/" element={<Login />} />
       <Route path="/login" element={<Login />} />
       <Route
         path="/dashboard"
